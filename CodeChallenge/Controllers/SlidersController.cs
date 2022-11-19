@@ -9,6 +9,16 @@ namespace CodeChallenge.Controllers
         public string Title { get; set; }
     }
 
+    public class HomeController : Controller
+    {
+        [HttpGet]
+        public IActionResult Index()
+        {
+            return Content("This is blog api");
+        }
+    }
+
+
     public class SlidersController : Controller
     {
         [HttpGet]
